@@ -1,0 +1,46 @@
+.mmt-chatLog-container {
+   .mmt-empty-container {
+      min-height: 155px;
+   }
+   .mmt-chatLog {
+      max-height: 300px;
+      overflow: scroll;
+      width: 100%;
+      padding: 20px;
+      padding-top: 0px;
+      .ui-chat__item__gutter {
+         margin-top: 10px;
+         left: 0px;
+      }
+      .ui-chat__item__message {
+         margin-left: 28px;
+         width: calc((100% - 28px) - 1rem);
+
+         .mmt-chatLog-msg {
+            padding: 10px 10px 10px 10px;
+            .ui-chat__message__timestamp {
+               opacity: 1;
+            }
+         }
+      }
+   }
+}
+
+.mmt-comments-inputGroup {
+   .mmt-comments-sendBtn {
+      min-width: auto;
+   }
+}
+
+
+.mmt-default {
+   .mmt-chatLog-container {
+      background-color: rgb(243, 242, 241);
+   }
+}
+
+.mmt-dark {
+   .mmt-chatLog-container {
+      background-color: rgb(32, 31, 31);
+   }
+}

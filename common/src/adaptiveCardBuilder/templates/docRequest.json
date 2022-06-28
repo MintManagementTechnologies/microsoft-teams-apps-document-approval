@@ -1,0 +1,89 @@
+{
+   "type": "AdaptiveCard",
+   "body": [
+       {
+           "type": "TextBlock",
+           "size": "Large",
+           "weight": "Bolder",
+           "text": "Document Requested - ${refNumber}"
+       },
+       {
+           "type": "TextBlock",
+           "text": "Details of the request:",
+           "wrap": true
+       },
+       {
+           "type": "ColumnSet",
+           "columns": [
+               {
+                   "type": "Column",
+                   "width": "auto",
+                   "items": [
+                       {
+                           "type": "TextBlock",
+                           "text": "Reference Number",
+                           "wrap": true,
+                           "spacing": "Small",
+                           "weight": "Bolder"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "Title",
+                           "wrap": true,
+                           "weight": "Bolder",
+                           "spacing": "Small"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "Requested by",
+                           "wrap": true,
+                           "weight": "Bolder",
+                           "spacing": "Small"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "",
+                           "wrap": true,
+                           "weight": "Bolder",
+                           "spacing": "Small"
+                       }
+                   ],
+                   "spacing": "None"
+               },
+               {
+                   "type": "Column",
+                   "width": "auto",
+                   "items": [
+                       {
+                           "type": "TextBlock",
+                           "text": "${refNumber}",
+                           "wrap": true,
+                           "spacing": "Small"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "${title}",
+                           "wrap": true,
+                           "spacing": "Small"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "${requestedBy}",
+                           "wrap": true,
+                           "spacing": "Small"
+                       },
+                       {
+                           "type": "TextBlock",
+                           "text": "${requestedByUPN}",
+                           "wrap": true,
+                           "spacing": "Small"
+                       }
+                   ]
+               }
+           ],
+           "minHeight": "0px"
+       }
+   ],
+   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+   "version": "1.5"
+}

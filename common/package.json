@@ -1,0 +1,27 @@
+{
+   "name": "common",
+   "version": "1.0.0",
+   "description": "Common shared between server and client",
+   "author": "Mint Management Technologies",
+   "license": "MIT",
+   "scripts": {
+      "copyLocales": "shx cp -r ./src/locales/en/* ./src/locales/en-GB && shx cp -r ./src/locales/en/* ./src/locales/en-ZA",
+      "copyLocalesToTabs": "shx cp -r ./src/locales ../tabs/public",
+      "copyLocalesToBot": "shx cp -r ./src/locales ../bot/common",
+      "copyLocalesToAll":  "npm run copyLocales && npm run copyLocalesToBot && npm run copyLocalesToTabs",
+      "copyTypes": "shx cp -r ./src/types ./src/adaptiveCardBuilder",
+      "copyVarsToTabs": "shx cp -r ./src/commonVariables.ts ../tabs/src/common/utils && shx cp -r ./src/configVariables.ts ../tabs/src/common/utils",
+      "copyToTabs": "shx cp -r ./src/adaptiveCardBuilder ../tabs/src/common/utils && npm run copyVarsToTabs",
+      "copyVarsToBot": "shx cp -r ./src/commonVariables.ts ../bot/common && shx cp -r ./src/configVariables.ts ../bot/common",
+      "copyToBot": "shx cp -r ./src/adaptiveCardBuilder ../bot/common && npm run copyVarsToBot",
+      "build": "tsc --build",
+      "buildAndCopy": "npm run copyTypes && tsc --build && npm run copyToTabs && npm run copyToBot"
+   },
+   "devDependencies": {
+      "date-fns": "^2.28.0",
+      "i18next": "^21.6.14",
+      "shx": "^0.3.4",
+      "typescript": "^4.6.2"
+   },
+   "dependencies": {}
+}

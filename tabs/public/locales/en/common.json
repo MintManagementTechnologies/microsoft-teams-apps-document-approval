@@ -1,0 +1,99 @@
+{
+   "entity": {
+      "user_one": "User",
+      "user_other": "Users",
+      "attachment_one": "Attachment",
+      "attachment_other": "Attachments",
+      "template_one": "Template",
+      "template_other": "Templates",
+      "comment_one": "Comment",
+      "comment_other": "Comments",
+      "request_one": "Request",
+      "request_other": "Requests",
+      "memo_one": "Memo",
+      "memo_other": "Memos",
+      "actorActionsLog": "Approval Log",
+      "config": "Configuration"
+   },
+   "button": {
+      "send": "Send",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close",
+      "cancel": "Cancel",
+      "new": "New",
+      "createEntity": "Create New {{entity}}",
+      "create": "Create",
+      "submit": "Submit",
+      "resubmit": "Resubmit",
+      "save": "Save",
+      "edit": "Edit",
+      "change": "Change {{entity}}",
+      "update": "Update",
+      "delete": "Delete",
+      "details": "Details",
+      "view": "View {{action}}",
+      "addMore": "Add more",
+      "attach": "Attach",
+      "recommender": "Recommend",
+      "supporter": "Support",
+      "approver": "Approve",
+      "approve": "Approve",
+      "reject": "Reject",
+      "withdraw": "Withdraw",
+      "dismiss": "Dismiss",
+      "requestDoc": "Request Document",
+      "conversation": "Start a conversation",
+      "meeting": "Start a meeting"
+   },
+   "loading": "Loading {{entity}}...",
+   "dropdown": {
+      "search": "Search {{entity}}"
+   },
+   "header": {
+      "level": "Level",
+      "status": "Status",
+      "date": "Date",
+      "refNumber": "Reference Number",
+      "created": "Requested on",
+      "modified": "No action since",
+      "title": "Title",
+      "createdBy": "Author",
+      "assignedTo": "Current Actor",
+      "user": "User",
+      "displayName": "Name",
+      "personaType": "Personas Assigned",
+      "viewOrAction": "View / Action"
+   },
+   "filter": {
+      "button": "Filter",
+      "clear": "Clear",
+      "label": {
+         "type": "Type",
+         "status": "Status",
+         "inactive": "Inactive",
+         "assignedTo": "Persona"
+      },
+      "value": {
+         "pending": "Under Review",
+         "rejected": "Sent back to requestor",
+         "approved": "Approved",
+         "withdrawn": "Withdrawn",
+         "3": "3 days",
+         "2": "2 days",
+         "currentApprover": "Need my action"
+      },
+      "placeholder": {
+         "searchBy": "Find by {{entity}}"
+      }
+   },
+   "error": {
+      "modal": {
+         "view": "Error trying to load the view in the modal.",
+         "action": "Error trying to load the action in the modal.",
+         "name": "KPI Goals"
+      },
+      "noItems": "No {{entity}} found",
+      "accessDenied": "You do not have permission to view this page."
+   }
+}

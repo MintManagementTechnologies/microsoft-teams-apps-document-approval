@@ -1,0 +1,25 @@
+{
+   "type": "AdaptiveCard",
+   "body": [
+       {
+           "type": "TextBlock",
+           "size": "Large",
+           "weight": "Bolder",
+           "text": "Configuration Required!"
+       },
+       {
+           "type": "TextBlock",
+           "text": "I can't find any SharePoint configuration. Let's get started by setting this up.",
+           "wrap": true
+       }
+   ],
+   "actions": [
+      {
+         "type": "Action.OpenUrl",
+         "title": "Configure SharePoint",
+         "url": "https://teams.microsoft.com/l/task/2e2ec2eb-b92c-4727-bed6-5513bc61d52a?url=https://localhost:53000/index.html#/admin/siteConfig/new/memo&height=500&width=500&title=SharePointConfig"
+      }
+   ],
+   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+   "version": "1.4"
+}

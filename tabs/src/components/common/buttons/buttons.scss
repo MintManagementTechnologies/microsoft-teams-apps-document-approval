@@ -1,0 +1,9 @@
+// Line items popup action buttons
+.ui-popup__content {
+   .ui-popup__content__content {
+      padding: 5px !important;
+      .ui-button {
+         justify-content: start;
+      }
+   }
+}

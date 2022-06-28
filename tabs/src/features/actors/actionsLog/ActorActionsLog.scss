@@ -1,0 +1,30 @@
+.mmt-table {
+   .mmt-header,
+   &.mmt-header:hover {
+      font-weight: bold;
+   }
+
+   .ui-table__cell__content {
+      width: 100%;
+   }
+}
+
+.mmt-dark {
+   .mmt-table {
+      border: 1px solid rgb(32, 31, 31);
+      .mmt-header,
+      &.mmt-header:hover {
+         background-color: rgb(32, 31, 31);
+      }
+   }
+}
+
+.mmt-default {
+   .mmt-table {
+      border: 1px solid rgb(243, 242, 241); //rgb(32, 31, 31);
+      .mmt-header,
+      &.mmt-header:hover {
+         background-color: rgb(243, 242, 241); //rgb(32, 31, 31);
+      }
+   }
+}

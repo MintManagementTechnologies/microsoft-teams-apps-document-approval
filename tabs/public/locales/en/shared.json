@@ -1,0 +1,159 @@
+{
+   "tab": {
+      "approvals": {
+         "header": "My Approvals"
+      },
+      "requests": {
+         "header": "My Requests"
+      },
+      "users": {
+         "header": "All Users"
+      },
+      "approvalCustodian": {
+         "header": "All Approved Memos"
+      },
+      "dgSupport": {
+         "header": "All Memos"
+      }
+   },
+   "form": {
+      "default": {
+         "name": "Form",
+         "label": "Details"
+      },
+      "docType": {
+         "label": "Document Type",
+         "value": {
+            "memo": "Memo"
+         }
+      },
+      "title": {
+         "label": "Title",
+         "placeholder": "Enter a title"
+      },
+      "subject": {
+         "label": "Subject",
+         "placeholder": "Enter a subject"
+      },
+      "actorLevel": {
+         "title": "Actor & PA",
+         "label": "Level {{level}} {{title}}",
+         "placeholder": "Search name"
+      },
+      "endorsementType": {
+         "label": "Endorsement Type",
+         "value": {
+            "recommender": "Recommender",
+            "supporter": "Supporter",
+            "approver": "Approver",
+            "new": ""
+         },
+         "verbValue": {
+            "recommender": "Recommendation",
+            "supporter": "Support",
+            "approver": "Approval"
+         },
+         "placeholder": "Select..."
+      },
+      "classification": {
+         "label": "Classification",
+         "value": {
+            "none": "None",
+            "confidential": "Confidential",
+            "secret": "Secret",
+            "topSecret": "Top Secret"
+         },
+         "placeholder": "Select..."
+      },
+      "noteDescription": {
+         "label": "Approval Note",
+         "placeholder": "Enter a short description for your request"
+      },
+      "comments": {
+         "label": "Chat Log",
+         "placeholder": "Add comment",
+         "message": "(This is for collaboration purposes only & will not be appended to the main document)"
+      },
+      "outcome": {
+         "label": "Outcome",
+         "value": {
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "withdrawn": "Withdrawn",
+            "recommended": "Recommended",
+            "supported": "Supported"
+         },
+         "sentenceValue": {
+            "pending": "{{outcome}} pending from {{displayName}}",
+            "approved": "{{outcome}} by {{displayName}}",
+            "rejected": "{{outcome}} rejected by {{displayName}}",
+            "skipped": "{{displayName}} skipped"
+         }
+      },
+      "actorStatus": {
+         "label": "Approval Log"
+      },
+      "user": {
+         "label": "User"
+      },
+      "personaType": {
+         "label": "Personas",
+         "value": {
+            "dgsupport": "DG Support",
+            "approvalcustodian": "Approval Custodian"
+         },
+         "placeholder": "Select..."
+      },
+      "supportingDocsLink": {
+         "label": "Supporting Documents Link",
+         "placeholder": "Enter the link to the shared OneDrive folder."
+      }
+   },
+   "taskModule": {
+      "title": {
+         "new": "New Request",
+         "view": "Request Details",
+         "edit": "Edit Request",
+         "editactors": "Edit Actors",
+         "approve": "Action Request",
+         "newUser": "New User",
+         "viewUser": "User Details",
+         "editUser": "Edit User",
+         "deleteUser": "Delete User"
+      }
+   },
+   "adaptiveCard": {
+      "action": {
+         "withdraw": "Withdraw",
+         "edit": "Edit",
+         "editactors": "Edit Actors",
+         "remindPA": "Remind PA",
+         "remindActor": "Remind Actor",
+         "review": "Review",
+         "downloadDoc": "Download Document",
+         "chatWithPA": "Chat With PA",
+         "chatWithActor": "Chat With Actor",
+         "chatWithRequestor": "Chat With Requestor",
+         "chatWithEntity": "Chat With {{entity}}"
+      }
+   },
+   "personas": {
+      "actor": "Actor",
+      "pa": "Personal Assistant"
+   },
+   "status": {
+      "created": "Created",
+      "submitted": "Submitted",
+      "pending": "Pending",
+      "complete": "Completed"
+   },
+   "message": {
+      "useTemplate": "Please use the above template to draft the memo",
+      "eSignAttachment": "Please download the document & e-sign. Uploading will override the previous document",
+      "complete": "The {{docType}} was {{outcome}} {{completeDays}}.",
+      "created": "The {{docType}} was submitted {{createdDays}}",
+      "overdueSuffix": "and is overdue by {{overdueDays}} working days.",
+      "docMoved": "Document was sent to Records Management. You can request a copy by clicking on the button below."
+   }
+}

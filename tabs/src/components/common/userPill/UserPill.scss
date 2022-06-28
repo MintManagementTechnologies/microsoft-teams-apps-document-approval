@@ -1,0 +1,28 @@
+.mmt-userPill {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-right: 7px;
+
+   .ui-pill__icon {
+      margin-left: 0px;
+      min-width: 24px;
+      align-self: center;
+   }
+
+   .ui-pillcontent {
+      padding-left: 12px;
+   }
+}
+
+.mmt-default {
+   .mmt-userPill {
+      color: rgb(37, 36, 35);
+   }
+}
+
+.mmt-dark {
+   .mmt-userPill {
+      background-color: rgba(31, 31, 31, 0.5);
+      color: rgb(255, 255, 255);
+   }
+}

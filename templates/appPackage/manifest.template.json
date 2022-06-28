@@ -1,0 +1,85 @@
+{
+   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+   "manifestVersion": "1.11",
+   "version": "1.0.6",
+   "id": "{{state.fx-resource-appstudio.teamsAppId}}",
+   "packageName": "net.mintgroup.za.docutrac",
+   "developer": {
+       "name": "Mint Management Technologies",
+       "websiteUrl": "https://www.mintgroup.net",
+       "privacyUrl": "https://www.mintgroup.net/privacy-policy-2",
+       "termsOfUseUrl": "https://www.mintgroup.net/privacy-policy-2",
+       "mpnId": "2148958"
+   },
+   "icons": {
+      "color": "resources/color.png",
+      "outline": "resources/outline.png"
+   },
+   "name": {
+      "short": "{{config.manifest.appName.short}}",
+      "full": "{{config.manifest.appName.full}}"
+   },
+   "description": {
+      "short": "Teams based document approval application.",
+      "full": "A multi-level, serial approval application developed for the use of the Eastern Cape Office of the Premier, for the management of internal memos and other documents that require lifecycle tracking and management."
+   },
+   "accentColor": "#5b5fc7",
+   "bots": [
+      {
+         "botId": "{{state.fx-resource-bot.botId}}",
+         "scopes": [
+            "personal",
+            "team"
+         ],
+         "supportsFiles": false,
+         "isNotificationOnly": false,
+         "commandLists": [
+            {
+               "scopes": [
+                  "personal",
+                  "team"
+               ],
+               "commands": []
+            }
+         ]
+      }
+   ],
+   "composeExtensions": [],
+   "configurableTabs": [
+      {
+         "configurationUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tabconfig",
+         "canUpdateConfiguration": true,
+         "scopes": [
+            "team",
+            "groupchat"
+         ]
+      }
+   ],
+   "staticTabs": [
+      {
+         "entityId": "memoDashboard",
+         "name": "Dashboard",
+         "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/me/dashboard/browse/1?upn={userPrincipalName}",
+         "scopes": [
+            "personal"
+         ]
+      },
+      {
+         "entityId": "appConfig",
+         "name": "Config",
+         "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/admin/config/browse/1?upn={userPrincipalName}",
+         "scopes": [
+            "personal"
+         ]
+      }
+   ],
+   "permissions": [
+      "identity",
+      "messageTeamMembers"
+   ],
+   "validDomains": [],
+   "webApplicationInfo": {
+      "id": "{{state.fx-resource-aad-app-for-teams.clientId}}",
+      "resource": "{{{state.fx-resource-aad-app-for-teams.applicationIdUris}}}"
+   }
+}

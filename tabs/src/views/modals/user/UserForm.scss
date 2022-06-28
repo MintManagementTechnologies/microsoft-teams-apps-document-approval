@@ -1,0 +1,18 @@
+.mmt-form-user {
+   .mmt-field-persona {
+      .ui-dropdown {
+         .ui-dropdown__selecteditem {
+            max-width: fit-content;
+            // display: flex;
+         }
+      }
+   }
+   .ui-dropdown {
+      &.mmt-graphPeoplePicker {
+         .ui-dropdown__selecteditem {
+            max-width: fit-content;
+            // display: flex;
+         }
+      }
+   }
+}

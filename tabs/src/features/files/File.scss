@@ -1,0 +1,44 @@
+.mmt-fileUploader-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.mmt-link-btn {
+  text-decoration: none;
+}
+
+.mmt-link-btn .ui-box {
+//   vertical-align: text-bottom;
+}
+
+.mmt-contextual-btn {
+   justify-content: flex-start !important;
+}
+
+.mmt-attachment {
+	&:hover {
+		.ui-attachment__action {
+			.mmt-contextual-btn {
+				.ui-icon {
+					color: inherit;
+				}
+			}
+			&:hover {
+				.mmt-contextual-btn {
+					&:not(:hover) {
+						.ui-icon__filled {
+							display: none !important;
+						}
+						.ui-icon__outline {
+							display: block !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
