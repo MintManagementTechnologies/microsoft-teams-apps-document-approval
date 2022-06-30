@@ -1,5 +1,5 @@
 
-# Care Application Deployment and Configuration
+# Deployment and Configuration
 
 ## Overview
 
