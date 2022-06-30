@@ -21,7 +21,7 @@
    },
    "description": {
       "short": "Teams based document approval application.",
-      "full": "A multi-level, serial approval application developed for the use of the Eastern Cape Office of the Premier, for the management of internal memos and other documents that require lifecycle tracking and management."
+      "full": "Multi-level, serial approval application for the management of internal memos and other documents that require lifecycle tracking and management."
    },
    "accentColor": "#5b5fc7",
    "bots": [
@@ -60,14 +60,6 @@
          "entityId": "memoDashboard",
          "name": "Dashboard",
          "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/me/dashboard/browse/1?upn={userPrincipalName}",
-         "scopes": [
-            "personal"
-         ]
-      },
-      {
-         "entityId": "appConfig",
-         "name": "Config",
-         "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/admin/config/browse/1?upn={userPrincipalName}",
          "scopes": [
             "personal"
          ]
